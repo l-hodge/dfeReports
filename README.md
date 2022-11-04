@@ -5,7 +5,7 @@
 [![R build
 status](https://github.com/l-hodge/usefulr/workflows/R-CMD-check/badge.svg)](https://github.com/l-hodge/usefulr/actions)
 [![Codecov test
-coverage](https://codecov.io/gh/l-hodge/usefulR/branch/master/graph/badge.svg)](https://codecov.io/gh/l-hodge/usefulR?branch=master)
+coverage](https://codecov.io/gh/l-hodge/usefulR/branch/main/graph/badge.svg)](https://app.codecov.io/gh/l-hodge/usefulR/branch/main)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 <!-- badges: end -->
