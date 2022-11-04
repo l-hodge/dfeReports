@@ -12,7 +12,7 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 
 # usefulR
 
-A series of ‘useful’ functions that perform general tasks.
+Write Department For Education Research Reports In Rmarkdown.
 
 ### Functions
 

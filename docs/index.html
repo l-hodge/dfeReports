@@ -5,14 +5,14 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Provides Useful Functions • usefulR</title>
+<title>Write Department For Education Research Reports In Rmarkdown • usefulR</title>
 <!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="bootstrap-toc.css">
 <script src="bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
-<script src="pkgdown.js"></script><meta property="og:title" content="Provides Useful Functions">
-<meta property="og:description" content="A collection of disparate but useful functions.">
+<script src="pkgdown.js"></script><meta property="og:title" content="Write Department For Education Research Reports In Rmarkdown">
+<meta property="og:description" content="A collection of functions and tex templates that allow for the easy creation of DfE styled Research Reports.">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -31,7 +31,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">usefulR</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.0.0</span>
       </span>
     </div>
 
@@ -55,12 +55,6 @@
   <ul class="dropdown-menu" role="menu">
 <li>
       <a href="articles/Colour-Palettes.html">Using the DfE Colour Palette</a>
-    </li>
-    <li>
-      <a href="articles/Distributional-Weights.html">Distributional Weights</a>
-    </li>
-    <li>
-      <a href="articles/Test.html">Test</a>
     </li>
   </ul>
 </li>
@@ -89,14 +83,14 @@
 <div id="usefulr" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
 <a href="#usefulr" class="anchor"></a>usefulR</h1></div>
-<p>A series of ‘useful’ functions that perform general tasks.</p>
+<p>Write Department For Education Research Reports In Rmarkdown.</p>
 <div id="functions" class="section level3">
 <h3 class="hasAnchor">
 <a href="#functions" class="anchor"></a>Functions</h3>
 <table class="table">
 <colgroup>
-<col width="16%">
-<col width="83%">
+<col width="17%">
+<col width="82%">
 </colgroup>
 <thead><tr class="header">
 <th>Function</th>
@@ -104,16 +98,14 @@
 </tr></thead>
 <tbody>
 <tr class="odd">
-<td><code><a href="reference/get_infl.html">get_infl()</a></code></td>
-<td>Fetches inflation time series from OBR incl outturn and projections</td>
+<td><code><a href="reference/dfe_colours.html">dfe_colours()</a></code></td>
+<td>Creates DfE colour palettes, typically monochrome sequential or
+spectral schemes</td>
 </tr>
 <tr class="even">
-<td><code><a href="reference/dist_weights.html">dist_weights()</a></code></td>
-<td>Creates ‘Distributional’ or ‘Welfare’ weights for a vector of earnings</td>
-</tr>
-<tr class="odd">
-<td><code><a href="reference/dfe_colours.html">dfe_colours()</a></code></td>
-<td>Creates DfE colour palettes, typically monochrome sequential or spectral schemes</td>
+<td><code>dfe_table()</code></td>
+<td>Wrapper for <code><a href="https://rdrr.io/pkg/knitr/man/kable.html">knitr::kable</a></code> to produce tables in the DfE
+style</td>
 </tr>
 </tbody>
 </table>
@@ -121,11 +113,12 @@
 <div id="rmarkdown-output-formats" class="section level3">
 <h3 class="hasAnchor">
 <a href="#rmarkdown-output-formats" class="anchor"></a>Rmarkdown output formats</h3>
-<p>This package includes two Rmarkdown output formats to produce DfE Research Reports.</p>
+<p>This package includes two Rmarkdown output formats to produce DfE
+Research Reports.</p>
 <table class="table">
 <colgroup>
-<col width="20%">
-<col width="80%">
+<col width="21%">
+<col width="78%">
 </colgroup>
 <thead><tr class="header">
 <th>Function</th>
@@ -138,7 +131,8 @@
 </tr>
 <tr class="even">
 <td><code><a href="reference/research_report.html">research_report()</a></code></td>
-<td>A <a href="https://bookdown.org/yihui/bookdown/">bookdown</a>-style DfE Research Report</td>
+<td>A <a href="https://bookdown.org/yihui/bookdown/">bookdown</a>-style
+DfE Research Report</td>
 </tr>
 </tbody>
 </table>
@@ -163,15 +157,19 @@
 <div id="starting-from-a-template" class="section level4">
 <h4 class="hasAnchor">
 <a href="#starting-from-a-template" class="anchor"></a>Starting from a template</h4>
-<p>You can create a new report using the template by using <code>rmarkdown</code> in the console;</p>
+<p>You can create a new report using the template by using
+<code>rmarkdown</code> in the console;</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">rmarkdown</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/rmarkdown/man/draft.html">draft</a></span><span class="op">(</span><span class="st">"ReportName.Rmd"</span>, template <span class="op">=</span> <span class="st">"dfe-report-pdf"</span>, package <span class="op">=</span> <span class="st">"usefulR"</span><span class="op">)</span></code></pre></div>
-<p>or in RStudio navigate to R Markdown… &gt; From Template &gt; DfE Report Template &gt; OK</p>
+<code class="sourceCode R"><span class="fu">rmarkdown</span><span class="fu">::</span><span class="fu"><a href="https://pkgs.rstudio.com/rmarkdown/reference/draft.html">draft</a></span><span class="op">(</span><span class="st">"ReportName.Rmd"</span>, template <span class="op">=</span> <span class="st">"dfe-report-pdf"</span>, package <span class="op">=</span> <span class="st">"usefulR"</span><span class="op">)</span></code></pre></div>
+<p>or in RStudio navigate to R Markdown… &gt; From Template &gt; DfE
+Report Template &gt; OK</p>
 </div>
 <div id="tinytex" class="section level4">
 <h4 class="hasAnchor">
 <a href="#tinytex" class="anchor"></a>TinyTeX</h4>
-<p>You will need to have <a href="https://yihui.org/tinytex/"><code>tinytex</code></a> installed to render these output formats. The following steps should help you get started:</p>
+<p>You will need to have <a href="https://yihui.org/tinytex/"><code>tinytex</code></a> installed to
+render these output formats. The following steps should help you get
+started:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># Install package</span>
 <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"tinytex"</span><span class="op">)</span> 

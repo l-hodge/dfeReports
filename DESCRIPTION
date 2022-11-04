@@ -4,7 +4,7 @@ Title: Write Department For Education Research Reports In Rmarkdown
 Version: 1.0.0
 Author: Louis Hodge
 Maintainer: Louis Hodge <louis.hodge@education.gov.uk>
-Description: A collection of functions and latex templates that allow for the easy creation of DfE styled Research Reports.
+Description: A collection of functions and tex templates that allow for the easy creation of DfE styled Research Reports.
 License: file LICENSE
 Encoding: UTF-8
 URL: https://l-hodge.github.io/usefulR/, https://github.com/l-hodge/usefulR
