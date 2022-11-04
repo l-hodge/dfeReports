@@ -12,7 +12,7 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 
 # usefulR
 
-Write Department For Education Research Reports In Rmarkdown.
+Write Department for Education (DfE) Research Reports in Rmarkdown.
 
 ### Functions
 

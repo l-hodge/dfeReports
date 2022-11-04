@@ -12,7 +12,7 @@ output: github_document
 
 # usefulR
 
-Write Department For Education Research Reports In Rmarkdown.
+Write Department for Education (DfE) Research Reports in Rmarkdown.
 
 ### Functions
 
