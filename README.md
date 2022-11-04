@@ -1,6 +1,5 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-
 <!-- badges: start -->
 
 [![R build
@@ -17,10 +16,10 @@ A series of ‘useful’ functions that perform general tasks.
 
 ### Functions
 
-| Function         | Description                                                                      |
-| ---------------- | -------------------------------------------------------------------------------- |
-| `dfe_colours()`  | Creates DfE colour palettes, typically monochrome sequential or spectral schemes |
-| `dfe_table()`    | Wrapper for `knitr::kable` to produce tables in the DfE style                    |
+| Function        | Description                                                                      |
+|-----------------|----------------------------------------------------------------------------------|
+| `dfe_colours()` | Creates DfE colour palettes, typically monochrome sequential or spectral schemes |
+| `dfe_table()`   | Wrapper for `knitr::kable` to produce tables in the DfE style                    |
 
 ### Rmarkdown output formats
 
@@ -28,8 +27,8 @@ This package includes two Rmarkdown output formats to produce DfE
 Research Reports.
 
 | Function            | Description                                                                  |
-| ------------------- | ---------------------------------------------------------------------------- |
-| `basic_report()`    | A basic DfE Research Report based on rmarkdown::pdf\_document()              |
+|---------------------|------------------------------------------------------------------------------|
+| `basic_report()`    | A basic DfE Research Report based on rmarkdown::pdf_document()               |
 | `research_report()` | A [bookdown](https://bookdown.org/yihui/bookdown/)-style DfE Research Report |
 
 #### Example yaml
