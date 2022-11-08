@@ -1,5 +1,8 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# usefulR
+
 <!-- badges: start -->
 
 [![R build
@@ -8,30 +11,40 @@ status](https://github.com/l-hodge/usefulr/workflows/R-CMD-check/badge.svg)](htt
 coverage](https://codecov.io/gh/l-hodge/usefulR/branch/main/graph/badge.svg)](https://app.codecov.io/gh/l-hodge/usefulR/branch/main)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+
 <!-- badges: end -->
 
-# usefulR
+## Overview
 
-Write Department for Education (DfE) Research Reports in Rmarkdown.
+Write Department for Education (DfE) research reports in Rmarkdown,
+according to the [template and style
+guide](https://www.gov.uk/government/publications/research-reports-guide-and-template).
 
-### Functions
+## Installation
+
+``` r
+# install.packages("remotes")
+remotes::install_github("l-hodge/usefulR")
+```
+
+## Functions
 
 | Function        | Description                                                                      |
 |-----------------|----------------------------------------------------------------------------------|
 | `dfe_colours()` | Creates DfE colour palettes, typically monochrome sequential or spectral schemes |
 | `dfe_table()`   | Wrapper for `knitr::kable` to produce tables in the DfE style                    |
 
-### Rmarkdown output formats
+## Rmarkdown output formats
 
 This package includes two Rmarkdown output formats to produce DfE
-Research Reports.
+research reports.
 
 | Function            | Description                                                                  |
 |---------------------|------------------------------------------------------------------------------|
-| `basic_report()`    | A basic DfE Research Report based on rmarkdown::pdf_document()               |
-| `research_report()` | A [bookdown](https://bookdown.org/yihui/bookdown/)-style DfE Research Report |
+| `basic_report()`    | A basic DfE research report based on rmarkdown::pdf_document()               |
+| `research_report()` | A [bookdown](https://bookdown.org/yihui/bookdown/)-style DfE research report |
 
-#### Example yaml
+### Example yaml
 
 ``` yaml
 ---
@@ -50,10 +63,10 @@ bibliography: biblio.bib
 ---
 ```
 
-#### Starting from a template
+### Starting from a template
 
-You can create a new report using the template by using `rmarkdown` in
-the console;
+You can start a new report from a template using `rmarkdown::draft()` in
+the console:
 
 ``` r
 rmarkdown::draft("ReportName.Rmd", template = "dfe-report-pdf", package = "usefulR")
@@ -62,7 +75,7 @@ rmarkdown::draft("ReportName.Rmd", template = "dfe-report-pdf", package = "usefu
 or in RStudio navigate to R Markdown… \> From Template \> DfE Report
 Template \> OK
 
-#### TinyTeX
+### TinyTeX
 
 You will need to have [`tinytex`](https://yihui.org/tinytex/) installed
 to render these output formats. The following steps should help you get
