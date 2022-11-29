@@ -19,7 +19,7 @@ basic_report <- function(number_sections = FALSE, ...) {
 
 research_report <- function(...) {
   fmt <- bookdown::pdf_book(...,
-                            base_format = usefulR::basic_report)
-  fmt$inherits <- "usefulR::basic_report"
+                            base_format = dfeReports::basic_report)
+  fmt$inherits <- "dfeReports::basic_report"
   fmt
 }

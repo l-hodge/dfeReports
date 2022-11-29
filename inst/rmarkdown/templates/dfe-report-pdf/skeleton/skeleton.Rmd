@@ -8,7 +8,7 @@ email: "xxxx@education.gov.uk"
 dferef: "xxxx"
 isbn: "xxxx"
 output: 
-   usefulR::research_report:
+   dfeReports::research_report:
       latex_engine: xelatex
 bibliography: biblio.bib
 csl: elsevier-harvard.csl
@@ -75,7 +75,7 @@ This is shown in equation \ref{eq:firsteq}.
 
 ```{r test-table, echo=FALSE, warning=FALSE}
 
-usefulR::dfe_tbl(head(mtcars), label = "test-table", caption = "mtcars data") %>%
+dfeReports::dfe_tbl(head(mtcars), label = "test-table", caption = "mtcars data") %>%
   kableExtra::footnote(general = c("1974 Motor Trend US magazine",
                                    "R Built-in Data Set"),
                        general_title = "Source: ") %>%

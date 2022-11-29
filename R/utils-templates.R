@@ -1,7 +1,7 @@
 # Helper functions borrowed from: https://github.com/rstudio/rticles/blob/master/R/utils.R
 
 # Helper function to see inside the package files
-pkg_file <- function(...) system.file(..., package = "usefulR")
+pkg_file <- function(...) system.file(..., package = "dfeReports")
 
 # Helper function to locate the custom LaTeX template
 find_resource <- function(template, file = 'template.tex') {

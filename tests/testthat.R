@@ -1,4 +1,4 @@
 library(testthat)
-library(usefulR)
+library(dfeReports)
 
-test_check("usefulR")
+test_check("dfeReports")

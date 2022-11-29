@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Write Department For Education Research Reports In Rmarkdown • usefulR</title>
+<title>Write Department For Education Research Reports In Rmarkdown • dfeReports</title>
 <!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="bootstrap-toc.css">
 <script src="bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
@@ -30,7 +30,7 @@
         <span class="icon-bar"></span>
       </button>
       <span class="navbar-brand">
-        <a class="navbar-link" href="index.html">usefulR</a>
+        <a class="navbar-link" href="index.html">dfeReports</a>
         <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.0.0</span>
       </span>
     </div>
@@ -61,7 +61,7 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/l-hodge/usefulR/">
+  <a href="https://github.com/l-hodge/dfeReports/">
     <span class="fab fa-github fa-lg"></span>
      
   </a>
@@ -78,9 +78,9 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-<div id="usefulr" class="section level1">
+<div id="dfereports" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
-<a href="#usefulr" class="anchor"></a>usefulR</h1></div>
+<a href="#dfereports" class="anchor"></a>dfeReports</h1></div>
 <!-- badges: start -->
 
 <!-- badges: end -->
@@ -96,7 +96,7 @@ and style guide</a>.</p>
 <a href="#installation" class="anchor"></a>Installation</h2>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># install.packages("remotes")</span>
-<span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span><span class="op">(</span><span class="st">"l-hodge/usefulR"</span><span class="op">)</span></code></pre></div>
+<span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span><span class="op">(</span><span class="st">"l-hodge/dfeReports"</span><span class="op">)</span></code></pre></div>
 </div>
 <div id="functions" class="section level2">
 <h2 class="hasAnchor">
@@ -163,7 +163,7 @@ DfE research report</td>
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">dferef</span><span class="kw">:</span><span class="at"> </span><span class="st">"xxxx"</span></span>
 <span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fu">isbn</span><span class="kw">:</span><span class="at"> </span><span class="st">"xxxx"</span></span>
 <span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="fu">output</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="at">   usefulR:</span><span class="fu">:research_report</span><span class="kw">:</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="at">   dfeReports:</span><span class="fu">:research_report</span><span class="kw">:</span></span>
 <span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">latex_engine</span><span class="kw">:</span><span class="at"> xelatex</span></span>
 <span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> biblio.bib</span></span>
 <span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div>
@@ -174,7 +174,7 @@ DfE research report</td>
 <p>You can start a new report from a template using
 <code><a href="https://pkgs.rstudio.com/rmarkdown/reference/draft.html">rmarkdown::draft()</a></code> in the console:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">rmarkdown</span><span class="fu">::</span><span class="fu"><a href="https://pkgs.rstudio.com/rmarkdown/reference/draft.html">draft</a></span><span class="op">(</span><span class="st">"ReportName.Rmd"</span>, template <span class="op">=</span> <span class="st">"dfe-report-pdf"</span>, package <span class="op">=</span> <span class="st">"usefulR"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span class="fu">rmarkdown</span><span class="fu">::</span><span class="fu"><a href="https://pkgs.rstudio.com/rmarkdown/reference/draft.html">draft</a></span><span class="op">(</span><span class="st">"ReportName.Rmd"</span>, template <span class="op">=</span> <span class="st">"dfe-report-pdf"</span>, package <span class="op">=</span> <span class="st">"dfeReports"</span><span class="op">)</span></code></pre></div>
 <p>or in RStudio navigate to R Markdown… &gt; From Template &gt; DfE
 Report Template &gt; OK</p>
 </div>
@@ -202,7 +202,7 @@ started:</p>
     <div class="links">
 <h2>Links</h2>
 <ul class="list-unstyled">
-<li>Browse source code at <br><a href="https://github.com/l-hodge/usefulR/">https://​github.com/​l-hodge/​usefulR/​</a>
+<li>Browse source code at <br><a href="https://github.com/l-hodge/dfeReports/">https://​github.com/​l-hodge/​dfeReports/​</a>
 </li>
 </ul>
 </div>
@@ -216,15 +216,15 @@ started:</p>
 <div class="developers">
 <h2>Developers</h2>
 <ul class="list-unstyled">
-<li>Louis Hodge <br><small class="roles"> Maintainer </small>  </li>
+<li>Louis Hodge <br><small class="roles"> Author, maintainer </small>  </li>
 </ul>
 </div>
 
   <div class="dev-status">
 <h2>Dev status</h2>
 <ul class="list-unstyled">
-<li><a href="https://github.com/l-hodge/usefulr/actions"><img src="https://github.com/l-hodge/usefulr/workflows/R-CMD-check/badge.svg" alt="R build status"></a></li>
-<li><a href="https://app.codecov.io/gh/l-hodge/usefulR/branch/main"><img src="https://codecov.io/gh/l-hodge/usefulR/branch/main/graph/badge.svg" alt="Codecov test coverage"></a></li>
+<li><a href="https://github.com/l-hodge/dfeReports/actions"><img src="https://github.com/l-hodge/dfeReports/workflows/R-CMD-check/badge.svg" alt="R build status"></a></li>
+<li><a href="https://app.codecov.io/gh/l-hodge/dfeReports/branch/main"><img src="https://codecov.io/gh/l-hodge/dfeReports/branch/main/graph/badge.svg" alt="Codecov test coverage"></a></li>
 <li><a href="https://www.tidyverse.org/lifecycle/#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="Lifecycle: experimental"></a></li>
 </ul>
 </div>

@@ -1,14 +1,14 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# usefulR
+# dfeReports
 
 <!-- badges: start -->
 
 [![R build
-status](https://github.com/l-hodge/usefulr/workflows/R-CMD-check/badge.svg)](https://github.com/l-hodge/usefulr/actions)
+status](https://github.com/l-hodge/dfeReports/workflows/R-CMD-check/badge.svg)](https://github.com/l-hodge/dfeReports/actions)
 [![Codecov test
-coverage](https://codecov.io/gh/l-hodge/usefulR/branch/main/graph/badge.svg)](https://app.codecov.io/gh/l-hodge/usefulR/branch/main)
+coverage](https://codecov.io/gh/l-hodge/dfeReports/branch/main/graph/badge.svg)](https://app.codecov.io/gh/l-hodge/dfeReports/branch/main)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 
@@ -24,7 +24,7 @@ guide](https://www.gov.uk/government/publications/research-reports-guide-and-tem
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("l-hodge/usefulR")
+remotes::install_github("l-hodge/dfeReports")
 ```
 
 ## Functions
@@ -57,7 +57,7 @@ email: "xxxx@education.gov.uk"
 dferef: "xxxx"
 isbn: "xxxx"
 output: 
-   usefulR::research_report:
+   dfeReports::research_report:
       latex_engine: xelatex
 bibliography: biblio.bib
 ---
@@ -69,7 +69,7 @@ You can start a new report from a template using `rmarkdown::draft()` in
 the console:
 
 ``` r
-rmarkdown::draft("ReportName.Rmd", template = "dfe-report-pdf", package = "usefulR")
+rmarkdown::draft("ReportName.Rmd", template = "dfe-report-pdf", package = "dfeReports")
 ```
 
 or in RStudio navigate to R Markdown… \> From Template \> DfE Report

@@ -1,13 +1,13 @@
-Package: usefulR
+Package: dfeReports
 Type: Package
 Title: Write Department For Education Research Reports In Rmarkdown
 Version: 1.0.0
-Author: Louis Hodge
-Maintainer: Louis Hodge <louis.hodge@education.gov.uk>
+Authors@R: 
+    person("Louis", "Hodge", email = "louis.hodge@education.gov.uk", role = c("aut", "cre"))
 Description: A collection of functions and tex templates that allow for the easy creation of DfE styled Research Reports.
 License: file LICENSE
 Encoding: UTF-8
-URL: https://l-hodge.github.io/usefulR/, https://github.com/l-hodge/usefulR
+URL: https://l-hodge.github.io/dfeReports/, https://github.com/l-hodge/dfeReports
 LazyData: true
 RoxygenNote: 7.1.1
 Depends:
